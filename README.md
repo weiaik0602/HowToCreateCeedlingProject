@@ -11,10 +11,14 @@ Replace the `<project_name>` with the your project name of choice. Then enter in
 ```
 cd <project_name>
 ```
-Fix the `project.yml` file to properly build executable file appropriate for Windows (Ceedling was build for Unix systems). Open the file and change `out` to `exe`
+Fix the `project.yml` file to properly build executable file appropriate for Windows (Ceedling was build for Unix systems). Open the file and change `out` to `exe` and add some line to fix the capitalize problem
 ```
+
 :extension:
   :executable: .exe
+  
+:module_generator:
+(space):naming: :bumpy
 ```
 Create `.gitignore` to ignore `build` folder that will contains a lot of unnecessary artifacts
 ```
