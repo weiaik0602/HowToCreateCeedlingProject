@@ -18,7 +18,7 @@ Fix the `project.yml` file to properly build executable file appropriate for Win
   :executable: .exe
   
 :module_generator:
-(space):naming: :bumpy
+ :naming: bumpy
 ```
 Create `.gitignore` to ignore `build` folder that will contains a lot of unnecessary artifacts
 ```
